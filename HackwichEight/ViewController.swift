@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        segmentedControl.selectedSegmentIndex = -1
+        
         super.viewDidLoad()
         mylabel.text = "My Segmented Control"
     }
@@ -30,6 +32,9 @@ class ViewController: UIViewController {
             
         case 1:
             print("Second Segment has been selected")
+            
+        case 2:
+            print("Woohoo, this makes sense now.")
             
         default:break
         }
